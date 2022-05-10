@@ -15,12 +15,12 @@ app.use(express.urlencoded({extended: false}))
 app.use(express.json())
 
 //controller
-const memberAPI = require("./controllers/member")
+const courseAPI = require("./controllers/course")
 
 const routes = [
     {
-        prefix: '/member',
-        target: memberAPI
+        prefix: '/',
+        target: courseAPI
     },
 ]
 for (let route of routes) {
